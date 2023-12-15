@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Nav from "../component/Nav";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
+import CocktailCard from "../component/CocktailCard";
 
 function CocktailDetailsPage() {
 
@@ -32,10 +33,7 @@ function CocktailDetailsPage() {
                 <>
                     {cocktails.map((cocktail) => {
                         return (
-                            <article>
-                                <h2> {cocktail.strDrink} </h2>
-                                <img src={cocktail.strDrinkThumb} />
-                            </article>
+                            <CocktailCard cocktailProps={cocktail} />
                         )
 
                     })}

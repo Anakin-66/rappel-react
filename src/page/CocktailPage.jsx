@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Nav from "../component/Nav";
+import Sidebar from "../component/CocktailCard";
 
 function CocktailPage() {
+
 
     const [cocktails, setCocktails] = useState(null);
 
